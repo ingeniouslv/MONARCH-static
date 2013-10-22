@@ -6,6 +6,7 @@ $(function() {
 	var winH = $(window).height();
 	var winW = $(window).width();
 	$('.row').css({ 'height': winH, 'width': winW });
+	$.stellar();
 	
 	if( (winW/winH) > (1280/720) ) {
 		$('.bgvid').css({ 
