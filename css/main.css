@@ -59,6 +59,95 @@ textarea {
 }
 
 
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+#main-nav {
+	opacity: 0;
+	background: rgb(255,255,255);
+	height: 85px;
+	width: 100%;	
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin-top: 0;
+	z-index: 99999;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	box-shadow: none;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}   
+
+#main-nav .inner {
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+#main-nav .inner .container {
+	width: 90%;
+	max-width: 1180px;
+	margin: auto;
+}
+
+#main-nav .inner .container .col4 {
+	width: 350px;
+	float: left;
+}
+#main-nav .inner .container .col4 h1 a {
+	color: #000;
+	text-decoration: none;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+#main-nav .inner .container .col4 h1 a:hover {
+	color: gray;
+}
+
+#main-nav .inner .container .col8 {
+	position: relative;
+	float: right;
+	text-align: right;
+	max-width: 740px;
+}
+
+#main-nav .inner .container .navigation {
+	margin: 30px 0;
+}
+
+#main-nav .inner .container .navigation a {
+	color: #000;
+	font-family: 'Abel', sans-serif;
+	font-size: 18px;
+	padding: 35px 7px;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+#main-nav .inner .container .navigation a:hover {
+	color: #fff;
+	background: #000;
+}
+
+
 /* ================
   -- Border Styles --
    ================ */
@@ -118,6 +207,7 @@ textarea {
 	vertical-align: middle;
 	text-align: center;
 	z-index: 12;
+	padding: 30px 0;
 }
 
 .story p {
@@ -213,6 +303,9 @@ textarea {
 	overflow: hidden;
 	z-index: 10;
 }   
+#whatwedo.story .content {
+	background: rgba(255,255,255,0.7);
+}
 #whatwedo .picture1 {
 	background: url(../img/whatwedo.jpg) no-repeat;
 	background-size: cover;
@@ -258,7 +351,7 @@ textarea {
 	top: 180px;
 }
 #whatwedo .container h1 {
-	color: #3e63c7;
+	color: #F3BE3C;
 	font-size: 75px;
 	margin: 0;
 	text-align: left;
@@ -267,7 +360,7 @@ textarea {
 
 #whatwedo .container p {
 	width: 60%;
-	background: rgba(255,255,255,0.75);
+	background: rgba(255,255,255,0.85);
 }
 
 
@@ -334,6 +427,7 @@ textarea {
 }
 
 #ourmethod .method .build h1 {
+	color: #F3BE3C;
 	font-size: 75px;
 	margin: 0;
 }
