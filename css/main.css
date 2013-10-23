@@ -107,12 +107,17 @@ textarea {
 	padding: 0;
 	text-align: center;
 	display: table;
+	position: relative;
+	z-index: 11;
+	position: relative;
 }
 
 .story .content {
 	display: table-cell;
+	position: relative;
 	vertical-align: middle;
 	text-align: center;
+	z-index: 12;
 }
 
 .story p {
@@ -120,6 +125,7 @@ textarea {
 	font-size: 18px;
 	line-height: 1.2em;
 	text-align: left;
+	z-index: 13;
 }
 
 /* ==========================================================================
@@ -204,14 +210,56 @@ textarea {
    ========================================================================== */
 #whatwedo {
 	padding: 0;
+	overflow: hidden;
+	z-index: 10;
 }   
-#whatwedo .content {
-	background: url(../img/whatwedo.jpg) no-repeat center right;
-	background-size: auto 60%;
+#whatwedo .picture1 {
+	background: url(../img/whatwedo.jpg) no-repeat;
+	background-size: cover;
+	display: block;
+	right: 100px;
+	height: 420px;
+	position: absolute;
+	top: 425px;
+	width: 620px;
+	z-index: 1;
 }   
+#whatwedo .picture2 {
+	background: url('../img/whatwedo1.jpg') no-repeat;
+	background-size: cover;
+	display: block;
+	width: 500px;
+	height: 333px;
+	position: absolute;
+	z-index: 1;
+	right: 575px;
+	top: 25px;
+}   
+#whatwedo .picture3 {
+	background: url('../img/whatwedo2.jpg') no-repeat;
+	background-size: cover;
+	display: block;
+	width:480px;
+	height: 320px;
+	position: absolute;
+	z-index: 1;
+	left: 60px;
+	top: 525px;
+}  
+#whatwedo .picture4 {
+	background: url('../img/whatwedo3.jpg') no-repeat;
+	background-size: cover;
+	display: block;
+	width:380px;
+	height: 200px;
+	position: absolute;
+	z-index: 1;
+	right: 0px;
+	top: 180px;
+}
 #whatwedo .container h1 {
 	color: #3e63c7;
-	font-size: 54px;
+	font-size: 75px;
 	margin: 0;
 	text-align: left;
 	text-transform: uppercase;
@@ -227,10 +275,68 @@ textarea {
    Our Method
    ========================================================================== */
 #ourmethod {
-	background: rgba(255,255,255,0.95);
+	background: rgba(0,0,0,0.75);
 	height: 450px;
+	color: #f1f1f1;
+	text-align: left;
 }
 
+#ourmethod .col1 {
+	width: 30%;
+	margin-right: 5%;
+	float: left;
+	text-align: left;
+}
+
+#ourmethod .col1 h1 {
+	font-size: 3.5em;
+	line-height: 1.1em;
+	margin: 0;
+	border-top: 5px solid #F3BE3C;
+	padding-top: 20px;
+}
+
+#ourmethod .col3 {
+	width: 65%;
+	float: left;
+}
+
+#ourmethod .method .column {
+	position: relative;
+	width:45%;
+	margin-right: 5%;
+	margin-bottom: 15px;
+	float: left;
+}
+
+#ourmethod .method .column h3 {
+	margin: 0;
+	text-align: left;
+	font-size: 1.7em;
+}
+
+#ourmethod .method .column p {
+	margin-top: 0.5em;
+}
+
+
+#ourmethod .method h3:after {
+	position: absolute;
+	top: 5px;
+	left: -25px;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-right: 0px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid #F3BE3C;
+	content: "";
+}
+
+#ourmethod .method .build h1 {
+	font-size: 75px;
+	margin: 0;
+}
 
 
 /* ==========================================================================
